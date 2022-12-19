@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="{{url_for('static',filename='user.png')}}">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{url_for('static',filename='assets/design4/img/aldsicon.png')}}">
+  <link rel="icon" type="image/png" href="{{url_for('static',filename='assets/design4/img/aldsicon.png')}}">
+  <title>
+    {{dname}}'s Porfolio - Made By Code With Tanmay
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+ 
+  <link href=" {{url_for('static',filename = 'assets/Design4/css/nucleo-icons.css')}}" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="{{url_for('static',filename = 'assets/Design4/css/blk-design-system.css')}}" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="{{url_for('static',filename = 'assets/Design4/demo/demo.css')}}" rel="stylesheet" />
+</head>
+
+<body class="profile-page">
+  <!-- Navbar -->
+
+  <!-- End Navbar -->
+  <div class="wrapper">
+    <div class="page-header">
+      <img src="{{url_for('static',filename='assets/Design4/img/dots.png')}}" class="dots">
+      <img src="{{url_for('static',filename='assets/Design4/img/path4.png')}}" class="path">
+      <div class="container align-items-center">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <h1 class="profile-title text-left">{{dlname}}</h1>
+            <h5 class="text-on-back">{{dname}}</h5>
+            <p class="profile-description">{{dabout}}</p>
+            <div class="btn-wrapper profile pt-3">
+              <a target="_blank" href="{{dgithub}}" class="btn btn-icon btn-dribbble btn-round" data-toggle="tooltip" data-original-title="Follow Me">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a target="_blank" href="{{dlinkedln}}" class="btn btn-icon btn-dribbble btn-round" data-toggle="tooltip" data-original-title="Follow Me">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a target="_blank" href="{{dfacebook}}" class="btn btn-icon btn-dribbble btn-round" data-toggle="tooltip" data-original-title="Follow Me">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a target="_blank" href="{{dinstagram}}" class="btn btn-icon btn-dribble  btn-round" data-toggle="tooltip" data-original-title="Follow Me">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+            <div class="card card-coin card-plain">
+              <div class="card-header">
+                <img src="static/img/{{dp}}" class="img-center img-fluid rounded-circle">
+                <h4 class="title">Profile</h4>
+              </div>
+              <div class="card-body">
+                <ul class="nav nav-tabs nav-tabs-primary justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#linka">
+                      Study
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#linkb">
+                      Skills
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#linkc">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content tab-subcategories">
+                  <div class="tab-pane active" id="linka">
+                    <div class="table-responsive">
+                      <table class="table tablesorter " id="plain-table">
+                        <thead class=" text-primary">
+                          <tr>
+                            <th class="header">
+                              School
+                            </th>
+                            <th>
+                              {{dschool}}
+                            </th>
+                            
+                          </tr>
+                        </thead>
+                        <thead class=" text-primary">
+                          <tr>
+                            <th class="header">
+                              College
+                            </th>
+                            <th>
+                              {{dcollege}}
+                            </th>
+                            
+                          </tr>
+                        </thead>
+                        
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="linkb">
+              
+                    <div class="table-responsive">
+                      <table class="table tablesorter " id="plain-table">
+                        <thead class=" text-primary">
+                          <tr>
+                            <th class="header">
+                              
+                            </th>
+                            <th>
+                             {{dsk1}}
+                            </th>
+                            <th>
+                             {{dsk2}}
+                            </th>
+                            
+                          </tr>
+                        </thead>
+                        <thead class=" text-primary">
+                          <tr>
+                            <th class="header">
+                              
+                            </th>
+                            <th>
+                              {{dsk3}}
+                            </th>
+                            <th>
+                              {{dsk4}}
+                            </th>
+                            
+                          </tr>
+                        </thead>
+                        <thead class=" text-primary">
+                          <tr>
+                            <th class="header">
+                              
+                            </th>
+                            <th>
+                              {{dsk5}}
+                            </th>
+                            <th>
+                              {{dsk6}}
+                            </th>
+                            
+                          </tr>
+                        </thead>
+
+
+                        <thead class=" text-primary">
+                          <tr>
+                            <th class="header">
+                              
+                            </th>
+                            <th>
+                              {{dsk7}}
+                            </th>
+                            <th>
+                              {{dsk}}
+                            </th>
+                            
+                          </tr>
+                        </thead>
+
+
+                      
+
+
+                      
+                        
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="linkc">
+                    <div class="table-responsive">
+                      <table class="table tablesorter " id="plain-table">
+                        <thead class=" text-primary">
+                          <tr>
+                            <th class="header">
+                              <i class="fa fa-phone"></i>
+                            </th>
+                            <th>
+                              {{dphone}}
+                            </th>
+                            
+                          </tr>
+                        </thead>
+                        <thead class=" text-primary">
+                          <tr>
+                            <th class="header">
+                              <i class="fa fa-envelope"></i>
+                            </th>
+                            <th>
+                              {{demail}}
+                            </th>
+                            
+                          </tr>
+                        </thead>
+                        
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+  </div>
+  <!--   Core JS Files   -->
+  <script src="{{url_for('static',filename = 'assets/Design4/js/core/jquery.min.js')}}" type="text/javascript"></script>
+  <script src="{{url_for('static',filename = 'assets/Design4/js/core/popper.min.js')}}" type="text/javascript"></script>
+  <script src="{{url_for('static',filename = 'assets/Design4/js/core/bootstrap.min.js')}}" type="text/javascript"></script>
+  <script src="{{url_for('static',filename = 'assets/Design4/js/plugins/perfect-scrollbar.jquery.min.js')}}"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="{{url_for('static',filename = 'assets/Design4/js/plugins/bootstrap-switch.js')}}"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="{{url_for('static',filename = 'assets/Design4/js/plugins/nouislider.min.js')}}" type="text/javascript')}}"></script>
+  <!-- Chart JS -->
+  <script src="{{url_for('static',filename = 'assets/Design4/js/plugins/chartjs.min.js')}}"></script>
+  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+  <script src="{{url_for('static',filename = 'assets/Design4/js/plugins/moment.min.js')}}"></script>
+  <script src="{{url_for('static',filename = 'assets/Design4/js/plugins/bootstrap-datetimepicker.js')}}" type="text/javascript"></script>
+  <!-- Black Dashboard DEMO methods, don't include it in your project! -->
+  <script src="{{url_for('static',filename = 'assets/Design4/demo/demo.js')}}"></script>
+  <!-- Control Center for Black UI Kit: parallax effects, scripts for the example pages etc -->
+  <script src="{{url_for('static',filename = 'assets/Design4/js/blk-design-system.min.js')}}" type="text/javascript"></script>
+</body>
+
+</html>
+
+
+
